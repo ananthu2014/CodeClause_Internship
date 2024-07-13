@@ -10,54 +10,29 @@ This project demonstrates the use of K-Means clustering to perform customer segm
 - `Annual Income (k$)`: Annual income of the customer in thousands of dollars
 - `Spending Score (1-100)`: Score assigned by the mall based on customer behavior and spending nature
 
-The project includes implementations of the K-Means clustering algorithm from scratch and using the scikit-learn library. Additionally, the K-Means++ initialization method was utilized for better clustering results. The optimal number of clusters was determined using the elbow method and the silhouette score.
+The project includes implementations of the K-Means clustering algorithm from scratch and using the scikit-learn library.  
+Additionally, the K-Means++ initialization method was utilized for better clustering results.  
+The optimal number of clusters was determined using the elbow method and the silhouette score was found to be approximately 0.4 for k = 4.  
+Exploratory data analysis(EDA) was performed on the dataset and insights after clustering are also given.  
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.6 or later
-- Apache Spark 3.0 or later
-- Java 8 or later
+- Python
 - scikit-learn
 - matplotlib
 - seaborn
+- Pandas
+- Numpy
 
-### Installation Steps
+## References:
 
-1. **Install PySpark**: You can install PySpark using pip.
+1. https://medium.com/@robertb909/k-means-clustering-a64f859a1074
+2. https://medium.com/data-and-beyond/customer-segmentation-using-k-means-clustering-with-pyspark-unveiling-insights-for-business-8c729f110fab
+3. Kaggle(dataset)  
 
-    ```sh
-    pip install pyspark
-    ```
 
-2. **Install scikit-learn, matplotlib, and seaborn**:
 
-    ```sh
-    pip install scikit-learn matplotlib seaborn
-    ```
 
-3. **Verify Installation**: Ensure that PySpark is installed correctly by starting a Python session and importing PySpark.
-
-    ```python
-    import pyspark
-    print(pyspark.__version__)
-    ```
-
-## Usage
-
-### Initialize a Spark Session
-
-To use PySpark, you need to initialize a Spark session. Here is how you can do it:
-
-```python
-from pyspark.sql import SparkSession
-
-# Initialize Spark session
-spark = SparkSession.builder \
-    .appName("MallCustomerSegmentation") \
-    .getOrCreate()
-
-# Print Spark session details
-print(spark)
 
