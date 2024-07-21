@@ -1,6 +1,6 @@
 # Retail Store Product Demand Forecasting
 
-This project focuses on developing a forecasting model to predict product demand in a retail store using statistical methods such as ARIMA and SARIMAX. The models are evaluated based on their performance using the Root Mean Square Error (RMSE) metric. The dataset used for this project is the global superstore dataset spanning 4 years, and the predictions are made for the subsequent 6 months.
+This project focuses on developing a forecasting model to predict product demand in a retail store using statistical methods such as ARIMA, SARIMAX and FACEBOOK PROPHET. The models are evaluated based on their performance using the Root Mean Square Error (RMSE) metric. The dataset used for this project is the global superstore dataset spanning 4 years, and the predictions are made for the subsequent 6 months.
 
 ## Project Overview
 
@@ -12,11 +12,11 @@ This project focuses on developing a forecasting model to predict product demand
 
 ## Dataset
 
-The dataset used in this project is the global superstore dataset, which contains 4 years of retail sales data. The data includes various attributes such as order date, sales, and product category.
+The dataset used in this project is the global superstore dataset, which contains 6 years of retail sales data. The data includes various attributes such as order date, sales, and product category.
 
 ## Results
 
-The SARIMAX model demonstrated superior performance compared to the ARIMA model, achieving a lower RMSE in the 6-month forecast period. This indicates that incorporating seasonal components and exogenous variables enhances the prediction accuracy.
+The SARIMAX model demonstrated superior performance compared to the PROPHET and ARIMA model, achieving a lower RMSE in the 6-month forecast period. This indicates that incorporating seasonal components enhances the prediction accuracy.
 
 ## Usage
 
